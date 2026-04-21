@@ -10,10 +10,56 @@ body {
 }
 body {
   margin: 0;
-  background: #eae9df;
+  background: #f6fae3;
+}
+/* Navbar layout */
+.navbar-custom {
+  padding: 57px 60px;
+  position: sticky;
+  top: 0px;
+  backdrop-filter: blur(20px);
+  z-index: 2000;
 }
 
-.container {
+/* Logo */
+.logo img {
+  width: 70px;
+  scale: 1.25;
+}
+
+/* Center pill menu */
+.menu {
+  background-color: #16404efc;
+  padding: 10px 47px;
+  border-radius: 50px;
+  gap: 73px;
+  margin-left: 60px;
+}
+
+/* Links */
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  opacity: 0.7;
+}
+
+/* Right circles */
+.actions {
+  gap: 15px;
+}
+
+.circle {
+  width: 56px;
+  height: 44px;
+  background-color: #edf3cf;
+  border-radius: 21px;
+}
+.car-container {
   margin-top: 50px;
   overflow-x: hidden;
 }
