@@ -61,7 +61,7 @@ if (window.innerWidth <= 568) {
       let transform = `rotateY(${i * angle}deg) translateZ(${radius}px)`;
       let scale = 0.6; // ✅ default small
 
-      if (cardAngle >= 90 && cardAngle <= 270) {
+      if (cardAngle >= 120 && cardAngle <= 240) {
         card.style.opacity = "1";
         card.style.pointerEvents = "auto";
 
@@ -170,7 +170,7 @@ if (window.innerWidth <= 568) {
       let transform = `rotateY(${i * angle}deg) translateZ(${radius}px)`;
       let scale = 0.6; // ✅ default small
 
-      if (cardAngle > 90 && cardAngle < 270) {
+      if (cardAngle > 50 && cardAngle < 270) {
         card.style.opacity = "1";
         card.style.pointerEvents = "auto";
 
@@ -179,7 +179,7 @@ if (window.innerWidth <= 568) {
 
         // ⭐ edge cards bigger
         if (
-          (cardAngle > 90 && cardAngle < 120) ||
+          (cardAngle > 60 && cardAngle < 120) ||
           (cardAngle > 240 && cardAngle < 270)
         ) {
           scale = 1.2; // 🔥 now this will actually work
