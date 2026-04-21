@@ -39,7 +39,7 @@ body {
   transition: transform 1s;
   transform-origin: center center;
   margin: 0 auto;
-  scale: 1.39;
+  scale: 1.42;
 }
 
 /* Cards positioned in circle */
@@ -63,6 +63,7 @@ body {
 #desc {
   width: 350px;
   margin: 0 auto;
+  font-family: "Rosarivo", cursive;
 }
 
 #name,
@@ -70,6 +71,17 @@ body {
   font-family: "Rosarivo", cursive;
   font-weight: 400;
   font-style: normal;
+}
+#name {
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+#role {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: -10px;
+  font-style: italic;
 }
 
 @media (max-width: 400px) {
@@ -87,7 +99,7 @@ body {
 }
 @media (min-width: 1700px) {
   .carousel {
-    scale: 1.53;
+    scale: 1.57;
   }
   .carousel-container {
     height: 500px;
@@ -95,9 +107,9 @@ body {
 }
 @media (min-width: 1920px) {
   .carousel {
-    scale: 1.72;
+    scale: 1.78;
   }
   .carousel-container {
-    height: 500px;
+    height: 600px;
   }
 }
