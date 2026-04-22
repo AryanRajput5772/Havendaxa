@@ -19,7 +19,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 2000;
-  background-color: edf3cf;
+  background: #f6fae3;
 }
 @media (min-width: 769px) {
   #menu {
