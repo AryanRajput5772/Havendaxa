@@ -524,9 +524,10 @@ iframe {
   }
 }
 .card-col {
-  transition: all 0.4s ease;
+  transition:
+    flex-basis 0.6s ease,
+    max-width 0.6s ease;
 }
-
 /* Expanded card */
 .card-col.active-col {
   flex: 0 0 50%;
