@@ -298,7 +298,7 @@ function toggleCard(selectedCard) {
     }
   });
 
-  selectedCard.classList.toggle("active");
+  selectedCard.classList.add("active");
 
   cols.forEach((col) => {
     col.classList.remove("active-col");
