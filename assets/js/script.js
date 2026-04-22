@@ -258,3 +258,32 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("scrolled");
   }
 });
+
+function playVideo() {
+  const infoBox = document.getElementById("info-box");
+  infoBox.style.marginTop = "40px";
+  const container = document.getElementById("videoContainer");
+
+  container.innerHTML = `
+         <iframe
+         class="video-frame"
+        width="100%"
+        
+        src="https://www.youtube.com/embed/tvYAidNdPMs?autoplay=1&start=5&playsinline=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+        `;
+}
+const dots = document.querySelectorAll(".dot");
+let index = 0;
+
+setInterval(() => {
+  dots[index].classList.remove("active");
+
+  index = (index + 1) % dots.length;
+
+  dots[index].classList.add("active");
+}, 2500);

@@ -444,3 +444,24 @@ iframe {
     margin-left: auto;
   }
 }
+
+.dots {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: transparent;
+  transition: all 0.4s ease;
+  border: 2px solid #00000088;
+}
+
+.dot.active {
+  background: #000000;
+}
