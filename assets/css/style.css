@@ -21,6 +21,9 @@ body {
   z-index: 2000;
   background: #f6fae3;
 }
+.scrolled {
+  background: #edf3cf;
+}
 @media (min-width: 769px) {
   #menu {
     margin-left: 150px;
