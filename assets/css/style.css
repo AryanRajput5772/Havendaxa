@@ -334,6 +334,8 @@ iframe {
   width: 350px;
   margin: 0 auto;
   font-family: "Rosarivo", cursive;
+  position: relative;
+  top: -20px;
 }
 
 #name,
@@ -446,7 +448,7 @@ iframe {
 }
 
 .dots {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
