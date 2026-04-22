@@ -287,3 +287,26 @@ setInterval(() => {
 
   dots[index].classList.add("active");
 }, 2500);
+
+function toggleCard(selectedCard) {
+  const cards = document.querySelectorAll(".card-custom");
+  const cols = document.querySelectorAll(".card-col");
+
+  cards.forEach((card) => {
+    if (card !== selectedCard) {
+      card.classList.remove("active");
+    }
+  });
+
+  selectedCard.classList.toggle("active");
+
+  cols.forEach((col) => {
+    col.classList.remove("active-col");
+    col.classList.add("inactive-col");
+  });
+
+  const parentCol = selectedCard.closest(".card-col");
+
+  parentCol.classList.add("active-col");
+  parentCol.classList.remove("inactive-col");
+}
