@@ -15,7 +15,7 @@ body {
 /* Navbar layout */
 
 .navbar {
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 20px 20px;
   position: sticky;
   top: 0;
@@ -245,6 +245,10 @@ body {
 iframe {
   border-radius: 30px;
 }
+.video-frame {
+  width: 100%;
+  height: 526px;
+}
 @media (max-width: 500px) {
   .video-section {
     padding: 20px 14px;
@@ -255,7 +259,7 @@ iframe {
   }
   .info-box {
     border-radius: 20px;
-    padding: 12px;
+    padding: 12px 6px;
     margin-top: -50px;
   }
   .info-box h5 {
@@ -266,7 +270,21 @@ iframe {
     width: auto;
   }
   .ht-stats .d2 {
-    width: auto;
+    width: 37%;
+  }
+  .watch-btn {
+    padding: 11px 10px;
+    font-size: 11px;
+  }
+  .yt-btn {
+    width: 35px;
+    height: 35px;
+  }
+  .video-frame {
+    height: 208px;
+  }
+  .play-btn img {
+    scale: 0.7;
   }
 }
 /* ----------------------------------------------------------------------------------------- * */
@@ -413,6 +431,7 @@ iframe {
   /* Navbar spacing fix */
   .navbar {
     padding: 15px 20px;
+    margin-top: 15px;
   }
 
   /* Logo alignment */
