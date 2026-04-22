@@ -238,3 +238,14 @@ if (window.innerWidth <= 568) {
 window.addEventListener("resize", () => {
   location.reload(); // simplest fix
 });
+
+const toggler = document.querySelector(".navbar-toggler");
+const menu = document.getElementById("menu");
+
+menu.addEventListener("show.bs.collapse", function () {
+  toggler.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+});
+
+menu.addEventListener("hide.bs.collapse", function () {
+  toggler.innerHTML = '<span class="navbar-toggler-icon"></span>';
+});

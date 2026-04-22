@@ -13,18 +13,29 @@ body {
   background: #f6fae3;
 }
 /* Navbar layout */
-.navbar-custom {
-  padding: 57px 60px;
-  position: sticky;
-  top: 0px;
-  backdrop-filter: blur(20px);
-  z-index: 2000;
-}
 
+.navbar {
+  padding: 50px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  backdrop-filter: blur(20px);
+}
+@media (min-width: 769px) {
+  #menu {
+    margin-left: 150px;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
 /* Logo */
 .logo img {
   width: 70px;
   scale: 1.25;
+}
+.logo {
+  margin-left: 50px;
 }
 
 /* Center pill menu */
@@ -63,7 +74,195 @@ body {
   margin-top: 50px;
   overflow-x: hidden;
 }
+/* ---------------------------------------------------------------------------------------- */
+.dream-section {
+  background-color: #f6fae3;
+}
 
+/* Big Heading */
+.dream-title {
+  font-family: "Rosarivo", serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000;
+}
+
+.dream-title span {
+  color: #163f4e;
+}
+
+/* Right Text */
+.dream-desc {
+  font-size: 16px;
+  color: #333;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .dream-desc {
+    margin: 0;
+  }
+}
+
+/* Button */
+.dream-btn {
+  background-color: #1b4a57;
+  color: #fff;
+  padding: 7px 42px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.dream-btn:hover {
+  background-color: #123640;
+  color: #fff;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .dream-title {
+    font-size: 32px;
+  }
+
+  .dream-desc {
+    font-size: 14px;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------- */
+.video-section {
+  padding: 40px 70px;
+  width: auto;
+}
+@media (max-width: 500px) {
+  .video-section {
+    padding: 20px 14px;
+  }
+}
+
+.video-card {
+  position: relative;
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.play-btn img {
+  width: 100px;
+  height: 100px;
+}
+
+.play-btn:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.play-btn i {
+  font-size: 30px;
+  color: #000;
+}
+
+.info-box {
+  background: #edf3cf;
+  border-radius: 30px;
+  margin-top: -72px;
+  padding: 31px 45px;
+  width: 90%;
+  position: relative;
+}
+.info-box h5 {
+  font-size: 27px;
+  font-family: system-ui;
+  font-weight: 600;
+}
+.HT {
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.fa-circle-check {
+  color: #01b802;
+  scale: 0.8;
+}
+.subs {
+  font-size: 12px;
+}
+
+.watch-btn {
+  background: #0b3d3f;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.yt-btn {
+  background: red;
+  color: white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+iframe {
+  border-radius: 30px;
+}
+@media (max-width: 500px) {
+  .video-section {
+    padding: 20px 14px;
+  }
+  .video-thumbnail {
+    border-radius: 20px;
+    height: 183px;
+  }
+  .info-box {
+    border-radius: 20px;
+    padding: 12px;
+    margin-top: -50px;
+  }
+  .info-box h5 {
+    font-size: 14px;
+  }
+
+  .ht-stats .d1 {
+    width: auto;
+  }
+  .ht-stats .d2 {
+    width: auto;
+  }
+}
+/* ----------------------------------------------------------------------------------------- * */
 /* Perspective gives 3D depth */
 .carousel-container {
   width: 100%;
@@ -138,6 +337,12 @@ body {
   .carousel {
     scale: 1;
   }
+  .logo img {
+    scale: 1;
+  }
+  .logo {
+    margin-left: 15px;
+  }
 }
 
 .carousel {
@@ -157,5 +362,59 @@ body {
   }
   .carousel-container {
     height: 600px;
+  }
+}
+@media (max-width: 768px) {
+  /* Collapse menu container */
+  #menu {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f6fae3;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  /* Remove pill style */
+  .menu {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 0;
+  }
+
+  /* Links styling */
+  .menu a {
+    color: #333;
+    font-size: 20px;
+  }
+
+  /* Hide right circles (like your reference UI) */
+  .actions {
+    display: none;
+  }
+  .circle {
+    display: none;
+  }
+
+  /* Navbar spacing fix */
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  /* Logo alignment */
+  .logo {
+    margin-left: 0;
+  }
+
+  /* Make toggler align right */
+  .navbar-toggler {
+    margin-left: auto;
   }
 }

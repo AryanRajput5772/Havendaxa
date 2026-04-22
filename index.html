@@ -6,6 +6,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet" />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
@@ -17,28 +20,120 @@
     <title>Team Carousel</title>
   </head>
   <body>
-    <header
-      class="navbar-custom container-fluid d-flex align-items-center justify-content-between">
-      <!-- Logo -->
+    <div class="navbar navbar-expand-md navbar-light px-3">
+      <!-- Logo LEFT -->
       <div class="logo">
         <img src="./assets/images/Havendaxa_logo1.png" alt="logo" />
       </div>
 
-      <!-- Center Menu -->
-      <nav class="menu d-flex">
-        <a href="#">Home</a>
-        <a href="#">About us</a>
-        <a href="#">Properties</a>
-        <a href="#">Awards</a>
-        <a href="#">Contact</a>
-      </nav>
+      <!-- Toggle RIGHT -->
+      <button
+        class="navbar-toggler border-0 shadow-none ms-auto"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <!-- Right Icons -->
-      <div class="actions d-flex">
-        <div class="circle"></div>
-        <div class="circle"></div>
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="menu">
+        <nav class="menu d-flex">
+          <a href="#">Home</a>
+          <a href="#">About us</a>
+          <a href="#">Properties</a>
+          <a href="#">Awards</a>
+          <a href="#">Contact</a>
+        </nav>
+
+        <div class="actions d-flex">
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
       </div>
-    </header>
+    </div>
+    <section class="dream-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- LEFT TEXT -->
+          <div class="col-lg-9 text-center text-lg-start mb-4 mb-lg-0">
+            <h1 class="dream-title">
+              WOULD YOU LIKE TO <br />
+              <span>CELEBRATE</span> YOUR DREAMS....?
+            </h1>
+          </div>
+
+          <!-- RIGHT CONTENT -->
+          <div class="col-lg-3 text-center text-lg-end">
+            <p class="dream-desc">
+              Own a share of premium real estate and start your investment
+              journey with Havendaxa through fractional ownership.
+            </p>
+
+            <a href="#" class="btn dream-btn mt-3">View More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------- -->
+    <div class="video-section">
+      <!-- Video Container -->
+      <div class="video-card" id="videoContainer">
+        <!-- Thumbnail -->
+        <img
+          src="./assets/images/video_thumbnail.jpg"
+          class="video-thumbnail"
+          id="thumbnail" />
+
+        <!-- Play Button -->
+        <div class="play-btn" onclick="playVideo()">
+          <img src="./assets/images/play button.png" alt="" />
+        </div>
+      </div>
+
+      <!-- Info Box -->
+      <div class="info-box mx-auto" id="info-box">
+        <!-- TOP: Title -->
+        <h5 class="mb-3 text-center text-md-start">
+          Decoding Fractional Ownership in Commercial Real Estate | Akhilesh
+          Sharma | Havendaxa
+        </h5>
+
+        <!-- BOTTOM ROW -->
+        <div
+          class="d-flex flex-row justify-content-between align-items-center ht-stats">
+          <!-- LEFT: Channel Info -->
+          <div class="d-flex align-items-start gap-2 d1">
+            <img src="./assets/images/HT.png" alt="HT" class="HT" />
+
+            <div class="text-start">
+              <p class="mb-0">
+                Hindustan Times <i class="fa-solid fa-circle-check"></i>
+              </p>
+              <p class="mb-0 small subs">8.64M subscribers</p>
+            </div>
+          </div>
+
+          <!-- RIGHT: Buttons -->
+          <div class="d-flex align-items-center gap-2 d2">
+            <a
+              href="https://www.youtube.com/watch?v=tvYAidNdPMs"
+              target="_blank"
+              class="yt-btn">
+              ▶
+            </a>
+
+            <a
+              href="https://www.youtube.com/watch?v=tvYAidNdPMs"
+              target="_blank"
+              class="watch-btn">
+              Watch Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------------------------------------------- -->
     <div class="car-container">
       <h1 id="name">Akhilesh Sharma</h1>
       <p id="role">MD & CEO</p>
@@ -98,6 +193,25 @@
     </div>
 
     <script src="./assets/js/script.js"></script>
+    <script>
+      function playVideo() {
+        const infoBox = document.getElementById("info-box");
+        infoBox.style.marginTop = "40px";
+        const container = document.getElementById("videoContainer");
+
+        container.innerHTML = `
+         <iframe
+        width="100%"
+        height="526"
+        src="https://www.youtube.com/embed/tvYAidNdPMs?autoplay=1&start=5&playsinline=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+        `;
+      }
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
