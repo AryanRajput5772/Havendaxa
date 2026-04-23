@@ -468,6 +468,11 @@ iframe {
   background: #000000;
 }
 /* -------------------------------------------------------------------------------------------- */
+.card-sec {
+  margin-bottom: 50px;
+  height: auto;
+  min-height: 1000px;
+}
 .section-title {
   font-size: 40px;
 }
@@ -571,4 +576,349 @@ iframe {
     flex: 0 0 100%;
     max-width: 100%;
   }
+}
+
+/* ------------------------------------------------------------------------------------ */
+.proj-showcase {
+  background: linear-gradient(135deg, #9aa56d, #b7bf8e);
+  padding: 100px 0;
+  overflow: hidden;
+
+  width: 100%;
+}
+
+.proj-subtitle {
+  color: #ffffffaa;
+  letter-spacing: 2px;
+}
+
+.proj-title {
+  color: white;
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+
+/* SLIDER */
+.proj-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 2px;
+  height: 954px;
+  padding-top: 68px;
+}
+
+.proj-track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  transition: transform 0.6s ease;
+}
+
+/* CARD BASE */
+.proj-card {
+  width: 320px;
+  height: 540px;
+  border-radius: 55px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  transform: scale(0.8);
+}
+.right-corner-card {
+  margin-left: -40px;
+}
+.left-corner-card {
+  margin-right: -40px;
+}
+.proj-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CENTER ACTIVE */
+.proj-active {
+  transform: scale(1);
+  opacity: 1;
+}
+.proj-card,
+.screen-bezel {
+  overflow: hidden;
+  position: relative;
+}
+
+.proj-card img,
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .proj-slider {
+    height: 585px;
+    padding-top: 40px;
+  }
+
+  .proj-track {
+    gap: 6px;
+    height: 320px;
+  }
+
+  /* Scale down the iPhone to fit mobile screen */
+  .iphone {
+    transform: scale(0.5);
+    transform-origin: center center;
+
+    margin-left: -58px;
+    margin-right: -58px;
+  }
+
+  .proj-card {
+    width: 160px;
+    height: 300px;
+    border-radius: 20px;
+    transform: scale(0.85);
+  }
+
+  .proj-title {
+    font-size: 24px;
+  }
+
+  /* REMOVE these — Bootstrap d-none handles it now */
+  /* .right-corner-card { display: none; } */
+  /* .left-corner-card { display: none; } */
+}
+
+@media (max-width: 468px) {
+  .proj-card {
+    display: none;
+  }
+  .proj-track {
+    height: 450px;
+  }
+
+  .iphone {
+    transform: scale(0.7);
+  }
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+.iphone {
+  position: relative;
+  width: 340px;
+  height: 636px;
+  background: linear-gradient(160deg, #1a1a1e 0%, #2c2c2e 40%, #1a1a1e 100%);
+  border-radius: 54px;
+  box-shadow:
+    0 0 0 1.5px #5a5a5e,
+    0 0 0 3px #3a3a3c,
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 40px 100px rgba(0, 0, 0, 0.55),
+    0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.screen-bezel {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  right: 9px;
+  bottom: 9px;
+  background: #000;
+  border-radius: 46px;
+  overflow: hidden;
+}
+
+/* Dynamic Island */
+.dynamic-island {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 36px;
+  background: #000;
+  border-radius: 20px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.di-camera {
+  width: 12px;
+  height: 12px;
+  background: #1a1a1e;
+  border-radius: 50%;
+  border: 1.5px solid #2a2a2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 40px;
+}
+
+.di-camera::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #0d0d10;
+  border-radius: 50%;
+}
+
+/* Hero Image */
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; /* full screen */
+  z-index: 1;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* Side Buttons */
+.btn-power {
+  position: absolute;
+  right: -4px;
+  top: 190px;
+  width: 4px;
+  height: 82px;
+  background: linear-gradient(to right, #3a3a3c, #5a5a5e, #3a3a3c);
+  border-radius: 0 5px 5px 0;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.btn-vol-up {
+  position: absolute;
+  left: -4px;
+  top: 170px;
+  width: 4px;
+  height: 56px;
+  background: linear-gradient(to left, #3a3a3c, #5a5a5e, #3a3a3c);
+  border-radius: 5px 0 0 5px;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.btn-vol-down {
+  position: absolute;
+  left: -4px;
+  top: 242px;
+  width: 4px;
+  height: 56px;
+  background: linear-gradient(to left, #3a3a3c, #5a5a5e, #3a3a3c);
+  border-radius: 5px 0 0 5px;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.btn-action {
+  position: absolute;
+  left: -4px;
+  top: 116px;
+  width: 4px;
+  height: 26px;
+  background: linear-gradient(to left, #3a3a3c, #5a5a5e, #3a3a3c);
+  border-radius: 5px 0 0 5px;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.4);
+}
+
+/* ── LEFT SIDE ── */
+.antenna-left-1 {
+  position: absolute;
+  left: -3px;
+  top: 72px;
+  width: 6px;
+  height: 4px;
+  background: #0a0a0c75;
+
+  z-index: 10;
+}
+.antenna-left-2 {
+  position: absolute;
+  left: -3px;
+  bottom: 72px;
+
+  width: 6px;
+  height: 4px;
+  background: #0a0a0c75;
+
+  z-index: 10;
+}
+
+/* ── RIGHT SIDE ── */
+.antenna-right-1 {
+  position: absolute;
+  right: -3px;
+  top: 72px;
+  width: 6px;
+  height: 4px;
+  background: #0a0a0c75;
+
+  z-index: 10;
+}
+.antenna-right-2 {
+  position: absolute;
+  right: -3px;
+  bottom: 72px;
+  width: 6px;
+  height: 4px;
+  background: #0a0a0c75;
+
+  z-index: 10;
+}
+
+/* ── TOP SIDE ── */
+.antenna-top-1 {
+  position: absolute;
+  top: -3px;
+  left: 70px;
+  width: 4px;
+  height: 6px;
+  background: #0a0a0c75;
+
+  z-index: 10;
+}
+.antenna-top-2 {
+  position: absolute;
+  top: -3px;
+  left: 78%;
+  width: 4px;
+  height: 6px;
+  background: #0a0a0c75;
+
+  z-index: 10;
+}
+
+/* ── BOTTOM SIDE ── */
+.antenna-bottom-1 {
+  position: absolute;
+  bottom: -3px;
+  left: 70px;
+  width: 4px;
+  height: 6px;
+  background: #0a0a0c75;
+
+  z-index: 10;
+}
+.antenna-bottom-2 {
+  position: absolute;
+  bottom: -3px;
+  left: 78%;
+  width: 4px;
+  height: 6px;
+  background: #0a0a0c75;
+
+  z-index: 10;
 }

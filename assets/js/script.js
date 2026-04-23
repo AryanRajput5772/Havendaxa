@@ -309,7 +309,7 @@ function toggleCard(selectedCard) {
           mainCardBtn.style.marginLeft = "50px";
 
           const mainCardDesc = mainCrdLastDiv.querySelector(".main-card-desc");
-          mainCardDesc.style.width = "70%";
+          mainCardDesc.style.width = "100%";
         }
       }
     }
