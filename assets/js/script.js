@@ -309,7 +309,7 @@ function toggleCard(selectedCard) {
           mainCardBtn.style.marginLeft = "50px";
 
           const mainCardDesc = mainCrdLastDiv.querySelector(".main-card-desc");
-          mainCardDesc.style.width = "100%";
+          mainCardDesc.style.width = "70%";
         }
       }
     }
@@ -325,10 +325,11 @@ function toggleCard(selectedCard) {
     if (mainCrdLastDiv) {
       mainCrdLastDiv.style.display = "flex";
       const mainCardBtn = mainCrdLastDiv.querySelector(".main-card-btn");
-      mainCardBtn.style.width = "30%";
+      mainCardBtn.style.width = "22%";
+      mainCardBtn.style.marginLeft = "0px";
 
       const mainCardDesc = mainCrdLastDiv.querySelector(".main-card-desc");
-      mainCardDesc.style.width = "100%";
+      mainCardDesc.style.width = "70%";
     }
   }
 
