@@ -299,16 +299,18 @@ function toggleCard(selectedCard) {
 
       activeContent.classList.remove("active-card-content");
 
-      const mainCrdLastDiv = card.querySelector(".main-card");
-      if (mainCrdLastDiv) {
-        mainCrdLastDiv.style.display = "block";
+      if (window.innerWidth > 568) {
+        const mainCrdLastDiv = card.querySelector(".main-card");
+        if (mainCrdLastDiv) {
+          mainCrdLastDiv.style.display = "block";
 
-        const mainCardBtn = mainCrdLastDiv.querySelector(".main-card-btn");
-        mainCardBtn.style.width = "50%";
-        mainCardBtn.style.marginLeft = "50px";
+          const mainCardBtn = mainCrdLastDiv.querySelector(".main-card-btn");
+          mainCardBtn.style.width = "50%";
+          mainCardBtn.style.marginLeft = "50px";
 
-        const mainCardDesc = mainCrdLastDiv.querySelector(".main-card-desc");
-        mainCardDesc.style.width = "100%";
+          const mainCardDesc = mainCrdLastDiv.querySelector(".main-card-desc");
+          mainCardDesc.style.width = "100%";
+        }
       }
     }
   });
@@ -318,15 +320,16 @@ function toggleCard(selectedCard) {
   const activeContent = selectedCard.querySelector(".card-content");
 
   activeContent.classList.add("active-card-content");
-  const mainCrdLastDiv = selectedCard.querySelector(".main-card");
-  if (mainCrdLastDiv) {
-    mainCrdLastDiv.style.display = "flex";
+  if (window.innerWidth > 568) {
+    const mainCrdLastDiv = selectedCard.querySelector(".main-card");
+    if (mainCrdLastDiv) {
+      mainCrdLastDiv.style.display = "flex";
+      const mainCardBtn = mainCrdLastDiv.querySelector(".main-card-btn");
+      mainCardBtn.style.width = "30%";
 
-    const mainCardBtn = mainCrdLastDiv.querySelector(".main-card-btn");
-    mainCardBtn.style.width = "30%";
-
-    const mainCardDesc = mainCrdLastDiv.querySelector(".main-card-desc");
-    mainCardDesc.style.width = "100%";
+      const mainCardDesc = mainCrdLastDiv.querySelector(".main-card-desc");
+      mainCardDesc.style.width = "100%";
+    }
   }
 
   cols.forEach((col) => {
