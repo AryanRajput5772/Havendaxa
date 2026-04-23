@@ -295,10 +295,39 @@ function toggleCard(selectedCard) {
   cards.forEach((card) => {
     if (card !== selectedCard) {
       card.classList.remove("active");
+      const activeContent = card.querySelector(".card-content");
+
+      activeContent.classList.remove("active-card-content");
+
+      const mainCrdLastDiv = card.querySelector(".main-card");
+      if (mainCrdLastDiv) {
+        mainCrdLastDiv.style.display = "block";
+
+        const mainCardBtn = mainCrdLastDiv.querySelector(".main-card-btn");
+        mainCardBtn.style.width = "50%";
+        mainCardBtn.style.marginLeft = "50px";
+
+        const mainCardDesc = mainCrdLastDiv.querySelector(".main-card-desc");
+        mainCardDesc.style.width = "100%";
+      }
     }
   });
 
   selectedCard.classList.add("active");
+
+  const activeContent = selectedCard.querySelector(".card-content");
+
+  activeContent.classList.add("active-card-content");
+  const mainCrdLastDiv = selectedCard.querySelector(".main-card");
+  if (mainCrdLastDiv) {
+    mainCrdLastDiv.style.display = "flex";
+
+    const mainCardBtn = mainCrdLastDiv.querySelector(".main-card-btn");
+    mainCardBtn.style.width = "30%";
+
+    const mainCardDesc = mainCrdLastDiv.querySelector(".main-card-desc");
+    mainCardDesc.style.width = "100%";
+  }
 
   cols.forEach((col) => {
     col.classList.remove("active-col");

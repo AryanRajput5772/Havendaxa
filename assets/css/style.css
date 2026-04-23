@@ -464,7 +464,7 @@ iframe {
   border: 2px solid #00000088;
 }
 
-.dot.active {
+.dot-active {
   background: #000000;
 }
 /* -------------------------------------------------------------------------------------------- */
@@ -502,7 +502,7 @@ iframe {
   height: 260px;
 }
 .card-content {
-  padding: 20px 43px;
+  padding: 15px 5px;
 }
 .btn-custom {
   background: #123b44;
@@ -513,6 +513,14 @@ iframe {
 }
 .active {
   background: #edf3cf;
+}
+.main-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.active-card-content {
+  padding: 20px 43px;
 }
 .card-custom.active .collapse-content {
   display: block;
