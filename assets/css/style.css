@@ -1443,4 +1443,7 @@ iframe {
   .faq-section {
     padding: 40px 16px 60px;
   }
+  .ftr-section {
+    background: linear-gradient(180deg, #959b70, #8a9460, #b6bd8f);
+  }
 }
