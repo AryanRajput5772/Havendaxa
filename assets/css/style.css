@@ -657,55 +657,6 @@ iframe {
   top: 0;
   left: 0;
 }
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .proj-slider {
-    height: 585px;
-    padding-top: 40px;
-  }
-
-  .proj-track {
-    gap: 6px;
-    height: 320px;
-  }
-
-  /* Scale down the iPhone to fit mobile screen */
-  .iphone {
-    transform: scale(0.5);
-    transform-origin: center center;
-
-    margin-left: -58px;
-    margin-right: -58px;
-  }
-
-  .proj-card {
-    width: 160px;
-    height: 300px;
-    border-radius: 20px;
-    transform: scale(0.85);
-  }
-
-  .proj-title {
-    font-size: 24px;
-  }
-
-  /* REMOVE these — Bootstrap d-none handles it now */
-  /* .right-corner-card { display: none; } */
-  /* .left-corner-card { display: none; } */
-}
-
-@media (max-width: 468px) {
-  .proj-card {
-    display: none;
-  }
-  .proj-track {
-    height: 450px;
-  }
-
-  .iphone {
-    transform: scale(0.7);
-  }
-}
 
 /* --------------------------------------------------------------------------------------------------------------------- */
 .iphone {
@@ -736,11 +687,11 @@ iframe {
 /* Dynamic Island */
 .dynamic-island {
   position: absolute;
-  top: 14px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 120px;
-  height: 36px;
+  width: 100px;
+  height: 28px;
   background: #000;
   border-radius: 20px;
   z-index: 100;
@@ -760,7 +711,7 @@ iframe {
   align-items: center;
   justify-content: center;
   position: relative;
-  left: 40px;
+  left: 35px;
 }
 
 .di-camera::after {
@@ -923,6 +874,51 @@ iframe {
   z-index: 10;
 }
 
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .proj-slider {
+    height: 633px;
+    padding-top: 40px;
+  }
+
+  .proj-track {
+    gap: 6px;
+    height: 320px;
+  }
+
+  /* Scale down the iPhone to fit mobile screen */
+  .iphone {
+    transform: scale(0.5);
+    transform-origin: center center;
+
+    margin-left: -58px;
+    margin-right: -58px;
+  }
+
+  .proj-card {
+    width: 160px;
+    height: 300px;
+    border-radius: 20px;
+    transform: scale(0.85);
+  }
+
+  .proj-title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 468px) {
+  .proj-card {
+    display: none;
+  }
+  .proj-track {
+    height: 504px;
+  }
+
+  .iphone {
+    transform: scale(0.7);
+    height: 685px;
+  }
+}
 /* --------------------------------------------------------------------------------------------------------------------- */
 
 /* ── VALUE WE DELIVER SECTION ── */
