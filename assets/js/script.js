@@ -235,10 +235,17 @@ if (window.innerWidth <= 568) {
 
   updateCarousel();
 }
-window.addEventListener("resize", () => {
-  location.reload(); // simplest fix
-});
+// Replace your current resize listener with this
+let lastWidth = window.innerWidth;
 
+window.addEventListener("resize", () => {
+  const newWidth = window.innerWidth;
+  if (newWidth !== lastWidth) {
+    // only reload on width change, not height
+    lastWidth = newWidth;
+    location.reload();
+  }
+});
 const toggler = document.querySelector(".navbar-toggler");
 const menu = document.getElementById("menu");
 
