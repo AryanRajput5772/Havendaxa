@@ -390,7 +390,7 @@ function slide() {
       position: absolute;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      object-fit: cover;
+      object-fit: fill;
       transform: translateX(100%);  /* start off RIGHT */
       transition: none;
       z-index: 2;
