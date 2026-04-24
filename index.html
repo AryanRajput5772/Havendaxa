@@ -362,101 +362,106 @@
         </div>
       </div>
     </section>
+
+    <section class="vwd-section">
+      <div class="container-fluid px-4 px-lg-5">
+        <!-- Header Row -->
+        <div class="row align-items-center mb-4 px-5">
+          <div class="col-12 col-lg-7 text-md-start">
+            <p class="vwd-subtitle">OUR EXCELLENCE</p>
+            <h2 class="vwd-title">VALUE WE DELIVER</h2>
+          </div>
+          <div class="col-12 col-lg-3 offset-lg-2 text-lg-end mt-3 mt-lg-0">
+            <p class="vwd-desc">
+              We deliver the highest quality in every project we take up.
+              Through the power of innovation, strategic thinking, and industry
+            </p>
+          </div>
+        </div>
+
+        <!-- Main Content Row -->
+        <div class="row g-3 align-items-stretch">
+          <!-- Left empty card -->
+          <div class="col-12 col-md-4 col-lg-3 d-none d-md-block">
+            <div class="vwd-card vwd-card--empty h-100"></div>
+          </div>
+
+          <!-- Middle cards column -->
+          <div class="col-12 col-md-8 col-lg-6">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="vwd-card">
+                  <h5 class="vwd-card__title text-md-start">Asset Discovery</h5>
+                  <p class="vwd-card__text">
+                    We select the best real estate assets that have the
+                    potential to grow in prime and high-growth locations. Our
+                    team conducts extensive research and analysis to ensure that
+                    the real estate assets have the potential to grow and
+                    provide consistent returns to investors.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="vwd-card">
+                  <h5 class="vwd-card__title text-md-start">
+                    Smart Investment
+                  </h5>
+                  <p class="vwd-card__text">
+                    By providing the facility of fractional ownership, we have
+                    made real estate investment smarter and easier for
+                    investors. Through the facility of fractional ownership,
+                    multiple investors can own a premium property at a lower
+                    investment cost and can benefit from the advantages of
+                    owning premium assets.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right character image -->
+          <div class="col-12 col-lg-3 d-none d-lg-block">
+            <div class="vwd-character-wrap">
+              <img
+                src="./assets/images/Character_img.png"
+                alt="Character"
+                class="vwd-character-img" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Row -->
+        <div class="row g-3 mt-0">
+          <!-- Professional Management wide card -->
+          <div class="col-12 col-md-8 col-lg-7">
+            <div class="vwd-card">
+              <h5 class="vwd-card__title text-md-start">
+                Professional Management
+              </h5>
+              <p class="vwd-card__text">
+                Our team of professionals takes complete care of the real estate
+                assets and ensures that the properties are efficiently managed.
+                This not only keeps the properties in the best condition but
+                also provides consistent returns to investors.
+              </p>
+            </div>
+          </div>
+
+          <!-- Logo card -->
+          <div class="col-6 col-md-3 col-lg-2">
+            <div
+              class="vwd-card vwd-card--logo h-100 d-flex align-items-center justify-content-center">
+              <img
+                src="./assets/images/Havendaxa_logo1.png"
+                alt="Logo"
+                class="vwd-logo-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="./assets/js/script.js"></script>
-    <script>
-      // Store all images in an array
-      const images = [
-        "https://images.unsplash.com/photo-1753517592698-d07a1d3317e3?w=600&auto=format&fit=crop&q=60",
-        "https://images.unsplash.com/photo-1568496376634-c2bbc85399f1?w=600&auto=format&fit=crop&q=60",
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab",
-        "https://images.unsplash.com/photo-1646928987919-d59cc03aa4d2?w=600&auto=format&fit=crop&q=60",
-        "https://images.unsplash.com/photo-1700585831956-f307405a56bc?w=600&auto=format&fit=crop&q=60",
-      ];
-
-      let currentIndex = 0;
-      let isAnimating = false;
-
-      const cards = document.querySelectorAll(".proj-card");
-      const phoneContainer = document.querySelector(".hero-image");
-
-      // Get all containers in order: far-left, near-left, phone, near-right, far-right
-      const containers = [
-        cards[0],
-        cards[1],
-        phoneContainer,
-        cards[2],
-        cards[3],
-      ];
-
-      function getSrcs(index) {
-        const total = images.length;
-        return [
-          images[(index - 2 + total) % total],
-          images[(index - 1 + total) % total],
-          images[index],
-          images[(index + 1) % total],
-          images[(index + 2) % total],
-        ];
-      }
-
-      function slide() {
-        if (isAnimating) return;
-        isAnimating = true;
-
-        currentIndex = (currentIndex + 1) % images.length;
-        const newSrcs = getSrcs(currentIndex);
-
-        containers.forEach((container, i) => {
-          const oldImg = container.querySelector("img");
-
-          // Create new image, place it off-screen to the RIGHT
-          const newImg = document.createElement("img");
-          newImg.src = newSrcs[i];
-          newImg.style.cssText = `
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      object-fit: cover;
-      transform: translateX(100%);  /* start off RIGHT */
-      transition: none;
-      z-index: 2;
-    `;
-          container.appendChild(newImg);
-
-          // Force paint so browser registers the starting position
-          newImg.getBoundingClientRect();
-
-          // Now animate BOTH simultaneously
-          const DURATION = "0.6s";
-          const EASING = "cubic-bezier(0.4, 0, 0.2, 1)";
-
-          // Old → slides LEFT
-          oldImg.style.transition = `transform ${DURATION} ${EASING}`;
-          oldImg.style.transform = "translateX(-100%)";
-
-          // New → slides to CENTER from right
-          newImg.style.transition = `transform ${DURATION} ${EASING}`;
-          newImg.style.transform = "translateX(0%)";
-        });
-
-        // Cleanup after animation
-        setTimeout(() => {
-          containers.forEach((container) => {
-            const imgs = container.querySelectorAll("img");
-            // Remove old image, keep new one, reset styles
-            if (imgs.length > 1) {
-              imgs[0].remove();
-              imgs[1].style.transition = "none";
-              imgs[1].style.transform = "translateX(0%)";
-              imgs[1].style.zIndex = "";
-            }
-          });
-          isAnimating = false;
-        }, 620); // just over transition duration
-      }
-
-      setInterval(slide, 3000);
-    </script>
+    <script></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

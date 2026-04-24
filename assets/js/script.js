@@ -287,7 +287,7 @@ setInterval(() => {
 
   dots[index].classList.add("active");
 }, 2500);
-
+// -----------------------------------------------------------------------------------
 function toggleCard(selectedCard) {
   const cards = document.querySelectorAll(".card-custom");
   const cols = document.querySelectorAll(".card-col");
@@ -343,3 +343,90 @@ function toggleCard(selectedCard) {
   parentCol.classList.add("active-col");
   parentCol.classList.remove("inactive-col");
 }
+// -------------------------------------------------------------------------------------------------
+// Store all images in an array
+const images = [
+  "https://images.unsplash.com/photo-1753517592698-d07a1d3317e3?w=600&auto=format&fit=crop&q=60",
+  "https://images.unsplash.com/photo-1568496376634-c2bbc85399f1?w=600&auto=format&fit=crop&q=60",
+  "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab",
+  "https://images.unsplash.com/photo-1646928987919-d59cc03aa4d2?w=600&auto=format&fit=crop&q=60",
+  "https://images.unsplash.com/photo-1700585831956-f307405a56bc?w=600&auto=format&fit=crop&q=60",
+];
+
+let currentIndex = 0;
+let isAnimating = false;
+
+const cards = document.querySelectorAll(".proj-card");
+const phoneContainer = document.querySelector(".hero-image");
+
+// Get all containers in order: far-left, near-left, phone, near-right, far-right
+const containers = [cards[0], cards[1], phoneContainer, cards[2], cards[3]];
+
+function getSrcs(index) {
+  const total = images.length;
+  return [
+    images[(index - 2 + total) % total],
+    images[(index - 1 + total) % total],
+    images[index],
+    images[(index + 1) % total],
+    images[(index + 2) % total],
+  ];
+}
+
+function slide() {
+  if (isAnimating) return;
+  isAnimating = true;
+
+  currentIndex = (currentIndex + 1) % images.length;
+  const newSrcs = getSrcs(currentIndex);
+
+  containers.forEach((container, i) => {
+    const oldImg = container.querySelector("img");
+
+    // Create new image, place it off-screen to the RIGHT
+    const newImg = document.createElement("img");
+    newImg.src = newSrcs[i];
+    newImg.style.cssText = `
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transform: translateX(100%);  /* start off RIGHT */
+      transition: none;
+      z-index: 2;
+    `;
+    container.appendChild(newImg);
+
+    // Force paint so browser registers the starting position
+    newImg.getBoundingClientRect();
+
+    // Now animate BOTH simultaneously
+    const DURATION = "0.6s";
+    const EASING = "cubic-bezier(0.4, 0, 0.2, 1)";
+
+    // Old → slides LEFT
+    oldImg.style.transition = `transform ${DURATION} ${EASING}`;
+    oldImg.style.transform = "translateX(-100%)";
+
+    // New → slides to CENTER from right
+    newImg.style.transition = `transform ${DURATION} ${EASING}`;
+    newImg.style.transform = "translateX(0%)";
+  });
+
+  // Cleanup after animation
+  setTimeout(() => {
+    containers.forEach((container) => {
+      const imgs = container.querySelectorAll("img");
+      // Remove old image, keep new one, reset styles
+      if (imgs.length > 1) {
+        imgs[0].remove();
+        imgs[1].style.transition = "none";
+        imgs[1].style.transform = "translateX(0%)";
+        imgs[1].style.zIndex = "";
+      }
+    });
+    isAnimating = false;
+  }, 620); // just over transition duration
+}
+
+setInterval(slide, 3000);
