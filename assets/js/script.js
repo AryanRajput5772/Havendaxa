@@ -346,11 +346,11 @@ function toggleCard(selectedCard) {
 // -------------------------------------------------------------------------------------------------
 // Store all images in an array
 const images = [
-  "https://images.unsplash.com/photo-1753517592698-d07a1d3317e3?w=600&auto=format&fit=crop&q=60",
-  "https://images.unsplash.com/photo-1568496376634-c2bbc85399f1?w=600&auto=format&fit=crop&q=60",
-  "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab",
-  "https://images.unsplash.com/photo-1646928987919-d59cc03aa4d2?w=600&auto=format&fit=crop&q=60",
-  "https://images.unsplash.com/photo-1700585831956-f307405a56bc?w=600&auto=format&fit=crop&q=60",
+  "./assets/images/Card_img.png",
+  "./assets/images/Card_img.png",
+  "./assets/images/Card_img.png",
+  "./assets/images/Card_img.png",
+  "./assets/images/Card_img.png",
 ];
 
 let currentIndex = 0;
