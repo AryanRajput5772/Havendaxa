@@ -10,7 +10,7 @@
   margin-top: 6px;
   height: 33px;
 
-  /* filter: invert(20%) sepia(40%) saturate(500%) hue-rotate(150deg); */
+  filter: invert(20%) sepia(40%) saturate(500%) hue-rotate(150deg);
 }
 
 .shd-meeting {
