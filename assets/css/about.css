@@ -145,22 +145,21 @@
     padding-left: 0;
   }
 
-  .path-para {
-    text-align: left;
-  }
-
   .path-title {
-    font-size: clamp(24px, 7vw, 36px);
+    font-size: 31px;
+    text-decoration: none;
   }
 }
 
 @media (max-width: 400px) {
   .path-img-wrapper {
     width: 260px;
+    margin-bottom: 50px;
   }
 
   .path-blob {
-    width: 180px;
-    height: 180px;
+    width: 214px;
+    height: 173px;
+    margin-bottom: -6px;
   }
 }
