@@ -1,0 +1,166 @@
+.crdfunding {
+  width: 60px;
+  height: 45px;
+
+  background-color: #edf3cf;
+  border-radius: 21px;
+}
+.crdfunding img {
+  width: 33px;
+  margin-top: 6px;
+  height: 33px;
+
+  filter: invert(20%) sepia(40%) saturate(500%) hue-rotate(150deg);
+}
+
+.shd-meeting {
+  width: 172px;
+  height: 45px;
+  background-color: #edf3cf;
+  border-radius: 21px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: #16404efc;
+  font-family: system-ui;
+}
+
+/* ── PATH SECTION ── */
+.path-section {
+  background-color: #f6fae3;
+
+  padding: 80px 20px 60px;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Title */
+.path-title {
+  font-family: "Rosarivo", serif;
+  font-size: 58px;
+  font-weight: 500;
+  color: #1a1a1a;
+  text-decoration: underline;
+  text-decoration-thickness: 3px; /* controls "height" */
+  text-underline-offset: 8px;
+  letter-spacing: -0.5px;
+}
+
+/* Image wrapper — positions blob behind characters */
+.path-img-wrapper {
+  position: relative;
+  width: 420px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  scale: 1.4;
+}
+
+/* The green blob behind */
+.path-blob {
+  position: absolute;
+  bottom: 18px;
+  left: 9.5%;
+
+  width: 347px;
+  height: 280px;
+  background-color: #979e6b;
+  border-radius: 840% 840% 373% 404%;
+  z-index: 0;
+}
+
+/* Character image on top of blob */
+.path-characters {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 420px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Text block */
+.path-text-block {
+  padding-left: 75px;
+}
+
+.actions-scrolled {
+  background: #f6fae3;
+}
+
+.path-para {
+  font-size: 18px;
+  color: #2a2a2a;
+  line-height: 1.85;
+  text-align: justify;
+  margin-bottom: 35px;
+  font-family: "Lora", serif;
+}
+
+/* Brand name highlight */
+.path-brand {
+  color: #6b7c3a;
+  font-weight: 700;
+}
+
+/* Decorative divider */
+.path-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+}
+
+.path-divider__line {
+  flex: 1;
+  height: 1.5px;
+  background-color: #555;
+  display: block;
+}
+
+.path-divider__diamond {
+  font-size: 14px;
+  color: #444;
+  line-height: 1;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 767px) {
+  .path-section {
+    padding: 50px 16px 40px;
+  }
+
+  .path-img-wrapper {
+    width: 300px;
+  }
+
+  .path-blob {
+    width: 220px;
+    height: 220px;
+  }
+
+  .path-text-block {
+    padding-left: 0;
+  }
+
+  .path-para {
+    text-align: left;
+  }
+
+  .path-title {
+    font-size: clamp(24px, 7vw, 36px);
+  }
+}
+
+@media (max-width: 400px) {
+  .path-img-wrapper {
+    width: 260px;
+  }
+
+  .path-blob {
+    width: 180px;
+    height: 180px;
+  }
+}

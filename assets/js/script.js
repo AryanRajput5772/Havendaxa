@@ -1,3 +1,20 @@
+window.addEventListener("scroll", function () {
+  const navbar = document.getElementById("nav-scroll");
+  const actions1 = document.getElementById("actions1");
+  const actions2 = document.getElementById("actions2");
+
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+
+    actions1.classList.add("actions-scrolled");
+    actions2.classList.add("actions-scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+    actions1.classList.remove("actions-scrolled");
+    actions2.classList.remove("actions-scrolled");
+  }
+});
+
 if (window.innerWidth <= 568) {
   const nameEl = document.getElementById("name");
   const roleEl = document.getElementById("role");
@@ -255,15 +272,6 @@ menu.addEventListener("show.bs.collapse", function () {
 
 menu.addEventListener("hide.bs.collapse", function () {
   toggler.innerHTML = '<span class="navbar-toggler-icon"></span>';
-});
-window.addEventListener("scroll", function () {
-  const navbar = document.getElementById("nav-scroll");
-
-  if (window.scrollY > 50) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
 });
 
 function playVideo() {
