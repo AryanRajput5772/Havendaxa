@@ -163,3 +163,474 @@
     margin-bottom: -6px;
   }
 }
+
+/* ------------------------------------------------------------------------------------------------- */
+/* ── LEADERSHIP SECTION ── */
+.lead-section {
+  padding: 80px 20px 70px;
+  font-family: "Lora", Georgia, serif;
+}
+
+/* Header */
+.lead-subtitle {
+  font-size: clamp(22px, 3vw, 25px);
+
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #3a3a3a;
+  font-family: system-ui, sans-serif;
+  margin-bottom: 12px;
+}
+
+.lead-title {
+  font-size: clamp(40px, 7vw, 55px);
+
+  font-weight: 400;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+  line-height: 1;
+  font-family: system-ui, sans-serif;
+}
+
+.lead-desc {
+  font-size: clamp(13px, 1.3vw, 15px);
+  color: #3a3a3a;
+
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+/* ── CARDS ── */
+
+.card-grid {
+  padding-inline: 48px;
+}
+.lead-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Right-aligned cards flip the order on desktop */
+.lead-card--right {
+  flex-direction: row; /* icon on right — handled by HTML order */
+}
+
+/* Icon box */
+.lead-card__icon {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  background-color: #edf3cf;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.lead-card__icon img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.lead-card__body {
+  flex: 1;
+}
+
+.lead-card__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #16404efc;
+  margin-bottom: 10px;
+  font-family: "Lora", serif;
+}
+
+.lead-card__text {
+  font-size: 13px;
+  color: #444;
+
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+/* ── CTA BLOCK ── */
+.lead-cta__title {
+  font-size: clamp(20px, 3vw, 30px);
+  color: #000000;
+  font-family: "Rosarivo", serif;
+
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.lead-cta__text {
+  font-size: 17px;
+  color: #000000;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 852px;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+/* DIVIDER */
+.lead-divider {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 380px; /* wider to match image 1 */
+  margin: 80px 0;
+}
+
+.lead-divider__line {
+  flex: 1;
+  height: 1.6px;
+  background-color: #1a1a1a; /* darker, matches image 1 */
+  display: block;
+}
+
+.lead-divider__dotl {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #1a1a1a;
+  display: block;
+  flex-shrink: 0;
+  margin-right: -6px;
+}
+.lead-divider__dotr {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #1a1a1a;
+  display: block;
+  flex-shrink: 0;
+  margin-left: -6px;
+}
+.lead-divider__sqr {
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+  scale: 0.8;
+
+  background-color: #1a1a1a;
+  display: block;
+  flex-shrink: 0;
+}
+.lead-divider__diamond {
+  font-size: 24px; /* bigger than before */
+  color: #1a1a1a;
+  line-height: 1;
+  flex-shrink: 0;
+}
+/* ── RESPONSIVE ── */
+@media (max-width: 767px) {
+  .lead-section {
+    padding: 50px 16px 50px;
+  }
+
+  .card-grid {
+    padding-inline: 0;
+  }
+
+  /* Stack icon above text, centered */
+  .lead-card,
+  .lead-card--right {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Force icon first for right-aligned cards (icon was second in HTML) */
+  .lead-card--right .lead-card__icon {
+    order: -1;
+  }
+
+  .lead-card__body,
+  .lead-card--right .lead-card__body {
+    text-align: center !important;
+    width: 100%;
+  }
+
+  .lead-card__text,
+  .lead-card__text.text-last-end {
+    text-align: center !important;
+    text-align-last: center !important;
+  }
+
+  .lead-card__title {
+    text-align: center;
+  }
+
+  .lead-card__icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 18px;
+  }
+
+  .lead-card__icon img {
+    width: 58px;
+    height: 58px;
+  }
+
+  .lead-desc {
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  .lead-subtitle,
+  .lead-title {
+    text-align: center !important;
+  }
+  .lead-title {
+    margin-bottom: 22px;
+  }
+  .lead-cta__title {
+    font-size: 23px;
+  }
+
+  .lead-cta__text {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .lead-divider {
+    width: 260px;
+  }
+  .path-para {
+    font-size: 16px;
+  }
+}
+/* --------------------------------------COMMUNICATION------------------------------------------------------------------- */
+/* ── COMMUNICATION SECTION ── */
+.comm-section {
+  padding: 80px 20px 70px;
+  font-family: "Lora", Georgia, serif;
+}
+
+.comm-subtitle {
+  font-size: clamp(22px, 3vw, 25px);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #3a3a3a;
+  font-family: system-ui, sans-serif;
+  margin-bottom: 12px;
+}
+
+.comm-title {
+  font-size: clamp(37px, 7vw, 55px);
+  font-weight: 400;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+  line-height: 1;
+  font-family: system-ui, sans-serif;
+}
+
+.comm-desc {
+  font-size: clamp(13px, 1.3vw, 15px);
+  color: #3a3a3a;
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+/* ── CARDS ── */
+.comm-card-grid {
+  padding-inline: 48px;
+}
+
+.comm-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.comm-card--right {
+  flex-direction: row;
+}
+
+.comm-card__icon {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  background-color: #edf3cf;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.comm-card__icon img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.comm-card__body {
+  flex: 1;
+}
+
+.comm-card__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #16404efc;
+  margin-bottom: 10px;
+  font-family: "Lora", serif;
+}
+
+.comm-card__text {
+  font-size: 13px;
+  color: #444;
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+/* ── CTA BLOCK ── */
+.comm-cta__title {
+  font-size: clamp(20px, 3vw, 30px);
+  color: #1a2e2a;
+  font-family: "Rosarivo", serif;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.comm-cta__text {
+  font-size: 17px;
+  color: #000000;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 852px;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+/* ── DIVIDER ── */
+.comm-divider {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 380px;
+  margin: 60px 0;
+}
+
+.comm-divider__line {
+  flex: 1;
+  height: 1.6px;
+  background-color: #1a1a1a;
+  display: block;
+}
+
+.comm-divider__dotl {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #1a1a1a;
+  display: block;
+  flex-shrink: 0;
+  margin-right: -6px;
+}
+
+.comm-divider__dotr {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #1a1a1a;
+  display: block;
+  flex-shrink: 0;
+  margin-left: -6px;
+}
+
+.comm-divider__sqr {
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+  scale: 0.8;
+  background-color: #1a1a1a;
+  display: block;
+  flex-shrink: 0;
+}
+
+.comm-divider__diamond {
+  font-size: 24px;
+  color: #1a1a1a;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 767px) {
+  .comm-section {
+    padding: 50px 16px 50px;
+  }
+
+  .comm-card-grid {
+    padding-inline: 0;
+  }
+
+  /* Stack icon above text, centered */
+  .comm-card,
+  .comm-card--right {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Force icon first for right-aligned cards */
+  .comm-card--right .comm-card__icon {
+    order: -1;
+  }
+
+  .comm-card__body,
+  .comm-card--right .comm-card__body {
+    text-align: center !important;
+    width: 100%;
+  }
+
+  .comm-card__text,
+  .comm-card__text.text-last-end {
+    text-align: center !important;
+    text-align-last: center !important;
+  }
+
+  .comm-card__title {
+    text-align: center;
+  }
+
+  .comm-card__icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 18px;
+  }
+
+  .comm-card__icon img {
+    width: 58px;
+    height: 58px;
+  }
+
+  .comm-desc {
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  .comm-subtitle,
+  .comm-title {
+    text-align: center !important;
+  }
+  .comm-title {
+    margin-bottom: 22px;
+  }
+
+  .comm-cta__text {
+    text-align: center;
+  }
+
+  .comm-divider {
+    width: 260px;
+  }
+}
