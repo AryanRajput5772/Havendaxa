@@ -6,8 +6,10 @@ window.addEventListener("scroll", function () {
   if (window.scrollY > 50) {
     navbar.classList.add("scrolled");
 
-    actions1.classList.add("actions-scrolled");
-    actions2.classList.add("actions-scrolled");
+    if (window.innerWidth >= 568) {
+      actions1.classList.add("actions-scrolled");
+      actions2.classList.add("actions-scrolled");
+    }
   } else {
     navbar.classList.remove("scrolled");
     actions1.classList.remove("actions-scrolled");
