@@ -16,7 +16,16 @@ window.addEventListener("scroll", function () {
     actions2.classList.remove("actions-scrolled");
   }
 });
+const toggler = document.querySelector(".navbar-toggler");
+const menu = document.getElementById("menu");
 
+menu.addEventListener("show.bs.collapse", function () {
+  toggler.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+});
+
+menu.addEventListener("hide.bs.collapse", function () {
+  toggler.innerHTML = '<span class="navbar-toggler-icon"></span>';
+});
 if (window.innerWidth <= 568) {
   const nameEl = document.getElementById("name");
   const roleEl = document.getElementById("role");
@@ -264,16 +273,6 @@ window.addEventListener("resize", () => {
     lastWidth = newWidth;
     location.reload();
   }
-});
-const toggler = document.querySelector(".navbar-toggler");
-const menu = document.getElementById("menu");
-
-menu.addEventListener("show.bs.collapse", function () {
-  toggler.innerHTML = '<i class="fa-solid fa-xmark"></i>';
-});
-
-menu.addEventListener("hide.bs.collapse", function () {
-  toggler.innerHTML = '<span class="navbar-toggler-icon"></span>';
 });
 
 function playVideo() {
