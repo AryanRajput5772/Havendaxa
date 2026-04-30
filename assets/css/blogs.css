@@ -48,6 +48,25 @@
   border-radius: 32px;
   overflow: hidden;
 }
+.flip-front {
+  position: relative;
+}
+
+.flip-front::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70%; /* how far up the fade goes */
+  background: linear-gradient(
+    to top,
+    rgba(151, 158, 120, 0.9) 0%,
+    /* match your page bg color */ rgba(240, 244, 232, 0) 100%
+  );
+  pointer-events: none;
+  border-radius: 0 0 20px 20px;
+}
 
 /* Front */
 .flip-front img {
@@ -60,7 +79,7 @@
 /* Back */
 .flip-back {
   transform: rotateY(180deg);
-  background: #798c5e;
+  background: #979e6b;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -263,6 +282,18 @@
     padding: 22px 30px;
   }
   .flip-back {
-    height: 360px;
+    height: max-content;
+    padding: 32px 28px 18px;
+  }
+
+  .hide_para {
+    display: none;
+  }
+
+  .flip-back .read-more-btn {
+    margin-top: auto;
+  }
+  .flip-back p {
+    font-size: 11px;
   }
 }
