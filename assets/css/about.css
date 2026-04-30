@@ -126,6 +126,10 @@
   line-height: 1;
 }
 
+.text-justify-right-last {
+  text-align: justify;
+  text-align-last: right;
+}
 /* ── RESPONSIVE ── */
 @media (max-width: 767px) {
   .path-section {
@@ -327,6 +331,11 @@
   line-height: 1;
   flex-shrink: 0;
 }
+
+.text-last-end {
+  text-align: justify;
+  text-align-last: right;
+}
 /* ── RESPONSIVE ── */
 @media (max-width: 767px) {
   .lead-section {
@@ -356,8 +365,7 @@
     width: 100%;
   }
 
-  .lead-card__text,
-  .lead-card__text.text-last-end {
+  .text-last-end {
     text-align: center !important;
     text-align-last: center !important;
   }
@@ -592,8 +600,7 @@
     width: 100%;
   }
 
-  .comm-card__text,
-  .comm-card__text.text-last-end {
+  .text-last-end {
     text-align: center !important;
     text-align-last: center !important;
   }
