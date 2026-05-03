@@ -296,7 +296,7 @@ iframe {
   display: flex;
   justify-content: center;
   align-items: center;
-  perspective: 650px;
+  perspective: 620px;
   transform-origin: center center;
 
   overflow: hidden;
