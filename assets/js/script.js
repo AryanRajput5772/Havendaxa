@@ -26,6 +26,18 @@ menu.addEventListener("show.bs.collapse", function () {
 menu.addEventListener("hide.bs.collapse", function () {
   toggler.innerHTML = '<span class="navbar-toggler-icon"></span>';
 });
+
+const dots = document.querySelectorAll(".dot");
+let index = 0;
+
+setInterval(() => {
+  dots[index].classList.remove("dot-active");
+
+  index = (index + 1) % dots.length;
+
+  dots[index].classList.add("dot-active");
+}, 2500);
+
 if (window.innerWidth <= 568) {
   const nameEl = document.getElementById("name");
   const roleEl = document.getElementById("role");
@@ -293,16 +305,7 @@ function playVideo() {
       </iframe>
         `;
 }
-const dots = document.querySelectorAll(".dot");
-let index = 0;
 
-setInterval(() => {
-  dots[index].classList.remove("active");
-
-  index = (index + 1) % dots.length;
-
-  dots[index].classList.add("active");
-}, 2500);
 // -----------------------------------------------------------------------------------
 function toggleCard(selectedCard) {
   const cards = document.querySelectorAll(".card-custom");
