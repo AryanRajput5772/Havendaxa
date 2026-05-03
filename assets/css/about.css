@@ -168,6 +168,24 @@
   }
 }
 
+@media (max-width: 1300px) {
+  .menu {
+    gap: 40px;
+    margin-left: 80px;
+  }
+  #menu {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 1140px) {
+  .menu {
+    gap: 30px;
+    margin-left: 46px;
+  }
+  #menu {
+    margin-left: 0px;
+  }
+}
 /* ------------------------------------------------------------------------------------------------- */
 /* ── LEADERSHIP SECTION ── */
 .lead-section {

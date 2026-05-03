@@ -28,15 +28,6 @@ body {
   padding: 20px 20px;
 }
 
-@media (min-width: 769px) {
-  #menu {
-    margin-left: 150px;
-    display: flex !important;
-    align-items: center;
-    justify-content: space-around;
-  }
-}
-
 /* Logo */
 .logo img {
   width: 70px;
@@ -81,6 +72,29 @@ body {
 .car-container {
   margin-top: 50px;
   overflow-x: hidden;
+}
+@media (min-width: 991px) {
+  #menu {
+    margin-left: 150px;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 1200px) {
+  .menu {
+    gap: 30px;
+    margin-left: 80px;
+  }
+  #menu {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 1015px) {
+  .menu {
+    gap: 20px;
+    margin-left: 45px;
+  }
 }
 /* ---------------------------------------------------------------------------------------- */
 .dream-section {
@@ -392,7 +406,7 @@ iframe {
     height: 600px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   /* Collapse menu container */
   #menu {
     margin-left: 0;
