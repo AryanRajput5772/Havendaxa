@@ -186,6 +186,48 @@
     margin-left: 0px;
   }
 }
+
+@media (max-width: 1200px) {
+  .path-img-wrapper {
+    width: 260px;
+    margin-bottom: 50px;
+    scale: 2;
+  }
+
+  .path-blob {
+    width: 214px;
+    height: 173px;
+    margin-bottom: -6px;
+  }
+}
+@media (max-width: 995px) {
+  .path-img-wrapper {
+    width: 260px;
+    margin-bottom: 50px;
+    scale: 1.7;
+    right: 5%;
+  }
+
+  .path-blob {
+    width: 214px;
+    height: 173px;
+    margin-bottom: -6px;
+  }
+}
+@media (max-width: 892px) {
+  .path-img-wrapper {
+    width: 260px;
+    margin-bottom: 50px;
+    scale: 1.5;
+    right: 1%;
+  }
+
+  .path-blob {
+    width: 214px;
+    height: 173px;
+    margin-bottom: -6px;
+  }
+}
 /* ------------------------------------------------------------------------------------------------- */
 /* ── LEADERSHIP SECTION ── */
 .lead-section {
