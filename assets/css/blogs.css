@@ -297,12 +297,12 @@
     font-size: 11px;
   }
 }
-@media (min-width: 750px) and (max-width: 900px) {
+@media (min-width: 750px) and (max-width: 1000px) {
   .flip-back {
-    height: 297px;
+    height: 330px;
   }
   .flip-back h3 {
-    font-size: 17px;
+    font-size: 23px;
   }
   .flip-back .back-date {
     scale: 0.9;
