@@ -1,0 +1,398 @@
+/* ══════════════════════════════════════
+   AWARDS PAGE – HERO SECTION
+══════════════════════════════════════ */
+
+/* Section wrapper */
+.awards-hero {
+  padding: 70px 60px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Left: hero image */
+.awards-hero__img-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.awards-hero__img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 24px 48px rgba(22, 64, 78, 0.13));
+}
+
+/* Right: content */
+.awards-hero__content {
+  padding-left: 40px;
+}
+
+/* Heading */
+.awards-hero__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.6rem;
+
+  color: #153f4e;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+/* Body text */
+.awards-hero__desc {
+  font-size: 17px;
+  color: #3a3a3a;
+  line-height: 1.75;
+  text-align: justify;
+  margin-bottom: 36px;
+  max-width: 680px;
+  font-weight: 500;
+}
+
+/* Stats row */
+.awards-hero__stats {
+  display: flex;
+  gap: 48px;
+  margin-bottom: 0px;
+  flex-wrap: wrap;
+}
+
+.awards-hero__stat-number {
+  font-family: "Poppins", sans-serif;
+
+  font-style: normal;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #153f4e;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.awards-hero__stat-label {
+  font-size: 17px;
+
+  color: #4a4a4a;
+  font-weight: 400;
+}
+
+/* Signatures row */
+.awards-hero__signatures {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.awards-hero__signature-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* Signature image overlaps the name */
+
+.awards-hero__sig-img1 {
+  width: 139px;
+  height: 110px;
+  object-fit: cover;
+
+  position: relative;
+  z-index: 2;
+  bottom: -33px;
+  left: 19px;
+}
+
+.awards-hero__sig-img2 {
+  width: 139px;
+  height: 110px;
+  object-fit: cover;
+
+  position: relative;
+  z-index: 2;
+  bottom: -59px;
+  left: 11px;
+}
+
+.awards-hero__sig-name {
+  font-size: 17px;
+  color: #0e2d36;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+  padding-top: 4px;
+
+  width: 100%;
+}
+
+/* ══════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════ */
+
+@media (max-width: 991px) {
+  .awards-hero {
+    padding: 50px 30px;
+  }
+
+  .awards-hero__content {
+    padding-left: 0;
+    margin-top: 40px;
+  }
+
+  .awards-hero__title {
+    font-size: 2rem;
+  }
+
+  .awards-hero__stats {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .awards-hero {
+    padding: 40px 20px;
+  }
+
+  .awards-hero__title {
+    font-size: 1.7rem;
+  }
+
+  .awards-hero__stat-number {
+    font-size: 1.8rem;
+  }
+
+  .awards-hero__stats {
+    gap: 24px;
+  }
+
+  .awards-hero__signatures {
+    gap: 36px;
+  }
+
+  .awards-hero__sig-img {
+    width: 100px;
+    height: 46px;
+  }
+}
+
+@media (max-width: 480px) {
+  .awards-hero__title {
+    font-size: 1.45rem;
+  }
+
+  .awards-hero__desc {
+    font-size: 0.9rem;
+  }
+
+  .awards-hero__stats {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+.awards-journey {
+  background: #edf3cf;
+
+  padding: 80px 70px 120px;
+}
+
+/* ── Section heading block ── */
+.awards-journey__label {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #8a9470;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.awards-journey__heading {
+  text-align: center;
+  font-family: "Poppins", serif;
+  font-size: 2.6rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 87px;
+  line-height: 1.15;
+}
+
+.awards-journey__heading strong {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+/* ── Grid of award cards ── */
+.awards-journey__grid {
+  row-gap: 70px;
+}
+
+/* ── Single award card ── */
+
+.award-card {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  max-width: 500px; /* constrain card width */
+  margin-left: auto; /* center the card inside its col */
+  margin-right: auto;
+}
+
+/* Badge / medal PNG */
+.award-card__badge {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  /* Replace with your actual medal PNG – transparent bg */
+  display: block;
+}
+
+/* Text content */
+.award-card__body {
+  flex: 1;
+  padding-top: 4px;
+}
+
+.award-card__year {
+  font-size: 25px;
+  font-weight: 400;
+  color: #3a3a3a;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.award-card__title {
+  font-family: "Poppins", serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0e2d36;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.award-card__desc {
+  font-size: 11px;
+  color: #4a4a4a;
+  padding-right: 13px;
+  text-align: justify;
+  margin: 0;
+}
+
+/* ══════════════════════════════════════
+       RESPONSIVE
+    ══════════════════════════════════════ */
+
+@media (max-width: 991px) {
+  .awards-journey {
+    padding: 60px 30px 70px;
+  }
+
+  .awards-journey__heading {
+    font-size: 2rem;
+    margin-bottom: 44px;
+  }
+
+  .award-card__badge {
+    width: 110px;
+    height: 110px;
+  }
+
+  .award-card__title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .awards-journey {
+    padding: 50px 20px 60px;
+  }
+
+  .awards-journey__heading {
+    font-size: 1.6rem;
+    letter-spacing: 0.02em;
+  }
+
+  .awards-journey__grid {
+    row-gap: 36px;
+  }
+
+  .award-card {
+    gap: 16px;
+  }
+
+  .award-card__badge {
+    width: 90px;
+    height: 90px;
+  }
+
+  .award-card__title {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .awards-journey__heading {
+    font-size: 1.35rem;
+  }
+
+  .award-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .award-card__desc {
+    text-align: center;
+  }
+}
+/* ------------------------------------------------------------------------- */
+.awards-journey2 {
+  padding: 80px 130px 120px;
+}
+.award-pics-card {
+  height: auto;
+}
+.award-pics-img {
+  width: 450px;
+}
+
+@media (max-width: 991px) {
+  .awards-journey2 {
+    padding: 60px 30px 70px;
+  }
+
+  .awards-journey__heading {
+    font-size: 2rem;
+    margin-bottom: 44px;
+  }
+  .award-pics-img {
+    width: 340px;
+  }
+}
+@media (max-width: 767px) {
+  .awards-journey2 {
+    padding: 50px 20px 60px;
+  }
+
+  .awards-journey__heading {
+    font-size: 1.6rem;
+    letter-spacing: 0.02em;
+  }
+}
+@media (max-width: 480px) {
+  .awards-journey__heading {
+    font-size: 1.35rem;
+  }
+}
