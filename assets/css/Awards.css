@@ -174,7 +174,8 @@
   }
 
   .awards-hero__signatures {
-    gap: 36px;
+    gap: 30px;
+    justify-content: center;
   }
 
   .awards-hero__sig-img {
@@ -394,5 +395,8 @@
 @media (max-width: 480px) {
   .awards-journey__heading {
     font-size: 1.35rem;
+  }
+  .awards-hero__img {
+    width: 75%;
   }
 }
