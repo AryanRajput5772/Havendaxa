@@ -159,6 +159,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px 30px;
+  justify-items: center;
 }
 
 .contact-detail-item {
@@ -186,10 +187,11 @@
 }
 
 .contact-detail-item__label {
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 600;
   color: #1a1a1a;
   display: block;
+  margin-bottom: -7px;
 }
 
 .contact-detail-item__value {
@@ -298,5 +300,10 @@
 
   .contact-info-panel__grid {
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .contact-info-panel__grid {
+    justify-items: start; /* big screens (align left) */
   }
 }
