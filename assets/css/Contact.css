@@ -171,16 +171,16 @@
 }
 
 .contact-detail-item__icon {
-  width: 42px;
-  height: 42px;
+  width: 45px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .contact-detail-item__icon svg {
-  width: 36px;
-  height: 36px;
+  width: 42px;
+  height: 42px;
   stroke: #1a1a1a;
   fill: none;
   stroke-width: 1.5;
@@ -204,10 +204,10 @@
 /* Google Map embed */
 .contact-map {
   width: 100%;
-  border-radius: 14px;
+  border-radius: 2px;
   overflow: hidden;
   border: none;
-  height: 290px;
+  height: 285px;
   display: block;
 }
 
@@ -236,13 +236,15 @@
   width: 40px;
 }
 .whatsapp {
-  scale: 2.7;
+  font-size: 40px;
+  line-height: 1;
 }
 .gmail {
   width: 40px;
 }
 .loc {
-  scale: 1.3;
+  width: 40px;
+  height: 40px;
 }
 /* ══════════════════════════════════════
        RESPONSIVE
@@ -302,8 +304,13 @@
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1287px) {
   .contact-info-panel__grid {
-    justify-items: start; /* big screens (align left) */
+    justify-content: start;
+    margin-left: -62px;
+    margin-right: 84px;
+  }
+  .contact-map {
+    width: 80%;
   }
 }
