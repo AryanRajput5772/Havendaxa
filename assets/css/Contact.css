@@ -228,8 +228,6 @@
   height: 550px;
   object-fit: cover;
   display: block;
-  /* sepia/olive tint to match the design */
-  filter: sepia(40%) saturate(60%) brightness(90%);
 }
 
 .telephone {
