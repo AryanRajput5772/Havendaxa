@@ -24,8 +24,8 @@
   font-weight: 400;
   color: #1a1a1a;
   letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 80px;
+
+  margin-bottom: 100px;
   font-family: "poppins", serif;
 }
 
@@ -42,7 +42,7 @@
 .contact-form-card {
   background: #edf3cf;
 
-  padding: 36px 70px 45px;
+  padding: 68px 70px 45px;
   flex: 0 0 610px;
 }
 
@@ -244,6 +244,31 @@
   width: 40px;
   height: 40px;
 }
+
+.below-img-heading-contact {
+  text-align: center;
+  font-size: 33px;
+  font-style: italic;
+  font-weight: 600;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+  margin-bottom: 80px;
+  margin-top: 111px;
+  font-family: "Rosarivo", serif;
+  line-height: 34.2px;
+}
+.above-img-heading-contact {
+  text-align: center;
+  font-size: 33px;
+  font-style: italic;
+  font-weight: 600;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+  margin-bottom: 80px;
+  margin-top: 110px;
+  font-family: "Rosarivo", serif;
+  line-height: 34.2px;
+}
 /* ══════════════════════════════════════
        RESPONSIVE
     ══════════════════════════════════════ */
@@ -290,6 +315,16 @@
 
   .contact-city-banner img {
     height: 220px;
+  }
+  .above-img-heading-contact {
+    font-size: 24px;
+    margin-top: 70px;
+    margin-bottom: -49px;
+  }
+  .below-img-heading-contact {
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 40px;
   }
 }
 

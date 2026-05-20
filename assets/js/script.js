@@ -324,7 +324,7 @@ function toggleCard(selectedCard) {
           mainCrdLastDiv.style.display = "block";
 
           const mainCardBtn = mainCrdLastDiv.querySelector(".main-card-btn");
-          mainCardBtn.style.width = "50%";
+          mainCardBtn.style.width = "65%";
           mainCardBtn.style.marginLeft = "50px";
 
           const mainCardDesc = mainCrdLastDiv.querySelector(".main-card-desc");

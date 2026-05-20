@@ -604,6 +604,7 @@ iframe {
 .proj-subtitle {
   color: #ffffffaa;
   letter-spacing: 2px;
+  font-size: 24px;
 }
 
 .proj-title {
@@ -1029,7 +1030,7 @@ iframe {
 /* Responsive */
 @media (max-width: 768px) {
   .vwd-desc {
-    text-align: left;
+    text-align: center;
   }
 
   .vwd-section {
@@ -1061,6 +1062,11 @@ iframe {
   margin-bottom: 0;
 }
 
+.tagline {
+  font-style: italic;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.75);
+}
 /* Emergency */
 .ftr-emergency__label {
   font-size: 23px;
@@ -1125,6 +1131,8 @@ iframe {
   font-size: 17px;
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 0;
+  width: max-content;
+  margin-top: 16px;
 }
 
 /* Newsletter bar */
