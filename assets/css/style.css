@@ -976,6 +976,7 @@ iframe {
 .vwd-card--empty {
   min-height: 200px;
   background-color: #edf3cf;
+  padding: 22px 4px;
 }
 
 .vwd-card--logo {
@@ -1013,7 +1014,7 @@ iframe {
   border-radius: 40px;
 
   background-color: #979e6b;
-  top: 167px;
+  top: 230px;
 }
 
 .vwd-character-img {

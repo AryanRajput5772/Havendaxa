@@ -46,38 +46,38 @@ if (window.innerWidth <= 568) {
   const people = [
     {
       name: "Akhilesh Sharma",
-      role: "MD & CEO",
-      desc: "We deliver exceptional quality through innovation and expertise. Our solutions make a real impact and drive measurable results.",
+      role: "MD & Founder",
+      desc: "Building The Future Of Fractional Ownership.",
     },
     {
       name: "Priyanka Sharma",
       role: "Co-Founder",
-      desc: "Building strong teams with passion.",
+      desc: "Creating Accessible Wealth Through Real Assets.",
     },
     {
       name: "Anant Gaur",
       role: "CTO",
-      desc: "Driving innovation with modern solutions.",
+      desc: "Powering Modern Real Estate Through Innovation.",
     },
     {
       name: "Payal Arora",
       role: "Operations Analyst",
-      desc: "Contributing to growth and success.",
+      desc: "Streamlining Investor Experiences With Excellence.",
     },
     {
       name: "Vipul Arora",
       role: "Company Secretary",
-      desc: "Ensuring timely delivery and quality.",
+      desc: "Ensuring Transparency With Strong Governance.",
     },
     {
       name: "Vishal Sinha",
       role: "Partner",
-      desc: "Crafting scalable applications.",
+      desc: "Driving Strategic Growth Through Premium Investments.",
     },
     {
       name: "Sukrati R Ambol",
       role: "CFO",
-      desc: "Designing intuitive experiences.",
+      desc: "Managing Financial Vision With Precision.",
     },
   ];
 
@@ -155,38 +155,38 @@ if (window.innerWidth <= 568) {
   const people = [
     {
       name: "Akhilesh Sharma",
-      role: "MD & CEO",
-      desc: "We deliver exceptional quality through innovation and expertise. Our solutions make a real impact and drive measurable results.",
+      role: "MD & Founder",
+      desc: "Building The Future Of Fractional Ownership.",
     },
     {
       name: "Priyanka Sharma",
       role: "Co-Founder",
-      desc: "Building strong teams with passion.",
+      desc: "Creating Accessible Wealth Through Real Assets.",
     },
     {
       name: "Anant Gaur",
       role: "CTO",
-      desc: "Driving innovation with modern solutions.",
+      desc: "Powering Modern Real Estate Through Innovation.",
     },
     {
       name: "Payal Arora",
       role: "Operations Analyst",
-      desc: "Contributing to growth and success.",
+      desc: "Streamlining Investor Experiences With Excellence.",
     },
     {
       name: "Vipul Arora",
       role: "Company Secretary",
-      desc: "Ensuring timely delivery and quality.",
+      desc: "Ensuring Transparency With Strong Governance.",
     },
     {
       name: "Vishal Sinha",
       role: "Partner",
-      desc: "Crafting scalable applications.",
+      desc: "Driving Strategic Growth Through Premium Investments.",
     },
     {
       name: "Sukrati R Ambol",
       role: "CFO",
-      desc: "Designing intuitive experiences.",
+      desc: "Managing Financial Vision With Precision.",
     },
   ];
 
