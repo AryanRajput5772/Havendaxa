@@ -47,37 +47,37 @@ if (window.innerWidth <= 568) {
     {
       name: "Akhilesh Sharma",
       role: "MD & Founder",
-      desc: "Fostering the concept of fractional ownership by creating growth and making premium commercial real estate easy to invest in.",
+      desc: "Driving the vision of making premium real estate accessible to all aspirant investors through fractional ownership.",
     },
     {
       name: "Priyanka Sharma",
       role: "Co-Founder",
-      desc: "Creating an easy to understand and investor-centric platform that makes premium real estate investments much simpler than before.",
+      desc: "Driving strategic growth through premium investment opportunities and long-term value creation.",
     },
     {
       name: "Anant Gaur",
       role: "CTO",
-      desc: "Innovating and leveraging technology at Havendaxa to create a better and easier real estate investment experience for today’s investors.",
+      desc: "Leveraging technology and innovation to simplify and enhance the investment experience.",
     },
     {
       name: "Payal Arora",
       role: "Operations Analyst",
-      desc: "Focusing on making operations smooth and ensuring coordination between investors to make the investment process streamlined.",
+      desc: "Streamlining operations and investor coordination to ensure a seamless investment journey.",
     },
     {
       name: "Vipul Arora",
       role: "Company Secretary",
-      desc: "Innovating and leveraging technology at Havendaxa to create a better and easier real estate investment experience for today’s investors.",
+      desc: "Ensuring transparency, compliance, and governance that strengthen investor confidence.",
     },
     {
       name: "Vishal Sinha",
       role: "Partner",
-      desc: "Helping Havendaxa achieve its strategic goals by utilizing premium real estate investments and developing growth-oriented, investor-centric strategies.",
+      desc: "Building an investor-focused platform centered on accessibility, trust, and simplicity.",
     },
     {
       name: "Sukrati R Ambol",
       role: "CFO",
-      desc: "Fostering Havendaxa’s financial vision and focusing on stability, strategic plans, and wealth creation through real asset-based investments.",
+      desc: "Leading financial strategy with a focus on stability, growth, and real asset value.",
     },
   ];
 
@@ -156,37 +156,37 @@ if (window.innerWidth <= 568) {
     {
       name: "Akhilesh Sharma",
       role: "MD & Founder",
-      desc: "Fostering the concept of fractional ownership by creating growth and making premium commercial real estate easy to invest in.",
+      desc: "Driving the vision of making premium real estate accessible to all aspirant investors through fractional ownership.",
     },
     {
       name: "Priyanka Sharma",
       role: "Co-Founder",
-      desc: "Creating an easy to understand and investor-centric platform that makes premium real estate investments much simpler than before.",
+      desc: "Driving strategic growth through premium investment opportunities and long-term value creation.",
     },
     {
       name: "Anant Gaur",
       role: "CTO",
-      desc: "Innovating and leveraging technology at Havendaxa to create a better and easier real estate investment experience for today’s investors.",
+      desc: "Leveraging technology and innovation to simplify and enhance the investment experience.",
     },
     {
       name: "Payal Arora",
       role: "Operations Analyst",
-      desc: "Focusing on making operations smooth and ensuring coordination between investors to make the investment process streamlined.",
+      desc: "Streamlining operations and investor coordination to ensure a seamless investment journey.",
     },
     {
       name: "Vipul Arora",
       role: "Company Secretary",
-      desc: "Innovating and leveraging technology at Havendaxa to create a better and easier real estate investment experience for today’s investors.",
+      desc: "Ensuring transparency, compliance, and governance that strengthen investor confidence.",
     },
     {
       name: "Vishal Sinha",
       role: "Partner",
-      desc: "Helping Havendaxa achieve its strategic goals by utilizing premium real estate investments and developing growth-oriented, investor-centric strategies.",
+      desc: "Building an investor-focused platform centered on accessibility, trust, and simplicity.",
     },
     {
       name: "Sukrati R Ambol",
       role: "CFO",
-      desc: "Fostering Havendaxa’s financial vision and focusing on stability, strategic plans, and wealth creation through real asset-based investments.",
+      desc: "Leading financial strategy with a focus on stability, growth, and real asset value.",
     },
   ];
 
