@@ -47,37 +47,37 @@ if (window.innerWidth <= 568) {
     {
       name: "Akhilesh Sharma",
       role: "MD & Founder",
-      desc: "Building The Future Of Fractional Ownership.",
+      desc: "Fostering the concept of fractional ownership by creating growth and making premium commercial real estate easy to invest in.",
     },
     {
       name: "Priyanka Sharma",
       role: "Co-Founder",
-      desc: "Creating Accessible Wealth Through Real Assets.",
+      desc: "Creating an easy to understand and investor-centric platform that makes premium real estate investments much simpler than before.",
     },
     {
       name: "Anant Gaur",
       role: "CTO",
-      desc: "Powering Modern Real Estate Through Innovation.",
+      desc: "Innovating and leveraging technology at Havendaxa to create a better and easier real estate investment experience for today’s investors.",
     },
     {
       name: "Payal Arora",
       role: "Operations Analyst",
-      desc: "Streamlining Investor Experiences With Excellence.",
+      desc: "Focusing on making operations smooth and ensuring coordination between investors to make the investment process streamlined.",
     },
     {
       name: "Vipul Arora",
       role: "Company Secretary",
-      desc: "Ensuring Transparency With Strong Governance.",
+      desc: "Innovating and leveraging technology at Havendaxa to create a better and easier real estate investment experience for today’s investors.",
     },
     {
       name: "Vishal Sinha",
       role: "Partner",
-      desc: "Driving Strategic Growth Through Premium Investments.",
+      desc: "Helping Havendaxa achieve its strategic goals by utilizing premium real estate investments and developing growth-oriented, investor-centric strategies.",
     },
     {
       name: "Sukrati R Ambol",
       role: "CFO",
-      desc: "Managing Financial Vision With Precision.",
+      desc: "Fostering Havendaxa’s financial vision and focusing on stability, strategic plans, and wealth creation through real asset-based investments.",
     },
   ];
 
@@ -156,37 +156,37 @@ if (window.innerWidth <= 568) {
     {
       name: "Akhilesh Sharma",
       role: "MD & Founder",
-      desc: "Building The Future Of Fractional Ownership.",
+      desc: "Fostering the concept of fractional ownership by creating growth and making premium commercial real estate easy to invest in.",
     },
     {
       name: "Priyanka Sharma",
       role: "Co-Founder",
-      desc: "Creating Accessible Wealth Through Real Assets.",
+      desc: "Creating an easy to understand and investor-centric platform that makes premium real estate investments much simpler than before.",
     },
     {
       name: "Anant Gaur",
       role: "CTO",
-      desc: "Powering Modern Real Estate Through Innovation.",
+      desc: "Innovating and leveraging technology at Havendaxa to create a better and easier real estate investment experience for today’s investors.",
     },
     {
       name: "Payal Arora",
       role: "Operations Analyst",
-      desc: "Streamlining Investor Experiences With Excellence.",
+      desc: "Focusing on making operations smooth and ensuring coordination between investors to make the investment process streamlined.",
     },
     {
       name: "Vipul Arora",
       role: "Company Secretary",
-      desc: "Ensuring Transparency With Strong Governance.",
+      desc: "Innovating and leveraging technology at Havendaxa to create a better and easier real estate investment experience for today’s investors.",
     },
     {
       name: "Vishal Sinha",
       role: "Partner",
-      desc: "Driving Strategic Growth Through Premium Investments.",
+      desc: "Helping Havendaxa achieve its strategic goals by utilizing premium real estate investments and developing growth-oriented, investor-centric strategies.",
     },
     {
       name: "Sukrati R Ambol",
       role: "CFO",
-      desc: "Managing Financial Vision With Precision.",
+      desc: "Fostering Havendaxa’s financial vision and focusing on stability, strategic plans, and wealth creation through real asset-based investments.",
     },
   ];
 
